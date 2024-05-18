@@ -352,36 +352,34 @@ namespace WindowsFormsApp4
         void RandevuSaatleriniEkle()
         {
             calisanVeZaman.OnBeforeSerialize();
-            
+
             if (TarihSorustur())
             {
-                if (!calisanVeZaman.values2.Contains("8.00-9.00")){ saatler.Items.Add("8.00-9.00"); }
-                if (!calisanVeZaman.values2.Contains("9.00-10.00")){ saatler.Items.Add("9.00-10.00"); }
-                if (!calisanVeZaman.values2.Contains("10.00-11.00")){ saatler.Items.Add("10.00-11.00"); }
-                if (!calisanVeZaman.values2.Contains("11.00-12.00")){ saatler.Items.Add("11.00-12.00"); }
-                if (!calisanVeZaman.values2.Contains("12.00-13.00")){ saatler.Items.Add("12.00-13.00"); }
-                if (!calisanVeZaman.values2.Contains("13.00-14.00")){ saatler.Items.Add("13.00-14.00"); }
-                if (!calisanVeZaman.values2.Contains("14.00-15.00")){ saatler.Items.Add("14.00-15.00"); }
-                if (!calisanVeZaman.values2.Contains("15.00-16.00")){ saatler.Items.Add("15.00-16.00"); }
-                if (!calisanVeZaman.values2.Contains("16.00-17.00")){ saatler.Items.Add("16.00-17.00"); }
+                if (!calisanVeZaman.values2.Contains("8.00-9.00") && !saatler.Items.Contains("8.00-9.00")) { saatler.Items.Add("8.00-9.00"); }
+                if (!calisanVeZaman.values2.Contains("9.00-10.00") && !saatler.Items.Contains("9.00-10.00")) { saatler.Items.Add("9.00-10.00"); }
+                if (!calisanVeZaman.values2.Contains("10.00-11.00") && !saatler.Items.Contains("10.00-11.00")) { saatler.Items.Add("10.00-11.00"); }
+                if (!calisanVeZaman.values2.Contains("11.00-12.00") && !saatler.Items.Contains("11.00-12.00")) { saatler.Items.Add("11.00-12.00"); }
+                if (!calisanVeZaman.values2.Contains("12.00-13.00") && !saatler.Items.Contains("12.00-13.00")) { saatler.Items.Add("12.00-13.00"); }
+                if (!calisanVeZaman.values2.Contains("13.00-14.00") && !saatler.Items.Contains("13.00-14.00")) { saatler.Items.Add("13.00-14.00"); }
+                if (!calisanVeZaman.values2.Contains("14.00-15.00") && !saatler.Items.Contains("14.00-15.00")) { saatler.Items.Add("14.00-15.00"); }
+                if (!calisanVeZaman.values2.Contains("15.00-16.00") && !saatler.Items.Contains("15.00-16.00")) { saatler.Items.Add("15.00-16.00"); }
+                if (!calisanVeZaman.values2.Contains("16.00-17.00") && !saatler.Items.Contains("16.00-17.00")) { saatler.Items.Add("16.00-17.00"); }
 
 
             }
 
             else
             {
-                saatler.Items.Add("8.00-9.00");
-                saatler.Items.Add("9.00-10.00");
-                saatler.Items.Add("10.00-11.00");
-                saatler.Items.Add("11.00-12.00");
-                saatler.Items.Add("12.00-13.00");
-                saatler.Items.Add("13.00-14.00");
-                saatler.Items.Add("14.00-15.00");
-                saatler.Items.Add("15.00-16.00");
-                saatler.Items.Add("16.00-17.00");
+                if (!saatler.Items.Contains("8.00-9.00")) saatler.Items.Add("8.00-9.00");
+                if (!saatler.Items.Contains("9.00-10.00")) saatler.Items.Add("9.00-10.00");
+                if (!saatler.Items.Contains("10.00-11.00")) saatler.Items.Add("10.00-11.00");
+                if (!saatler.Items.Contains("11.00-12.00")) saatler.Items.Add("11.00-12.00");
+                if (!saatler.Items.Contains("12.00-13.00")) saatler.Items.Add("12.00-13.00");
+                if (!saatler.Items.Contains("13.00-14.00")) saatler.Items.Add("13.00-14.00");
+                if (!saatler.Items.Contains("14.00-15.00")) saatler.Items.Add("14.00-15.00");
+                if (!saatler.Items.Contains("15.00-16.00")) saatler.Items.Add("15.00-16.00");
+                if (!saatler.Items.Contains("16.00-17.00")) saatler.Items.Add("16.00-17.00");
             }
-            
-
 
         }
         
@@ -495,9 +493,9 @@ namespace WindowsFormsApp4
             return false;
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }
