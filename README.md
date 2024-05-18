@@ -1,2 +1,2 @@
 # OOP Task
- C# Windows Forms kullanılarak yapılmış Güzellik Merkezi Randevu sistemi.
+A beauty center appointment system has been developed using C# Windows Forms.
